@@ -7,7 +7,7 @@
 
 Red Hat and Fedora
 
-Fedora Haskell project and [SIG](https://fedoraproject.org/wiki/Haskell_SIG#History) founder
+Fedora Haskell project and SIG founder
 
 # Haskell
 
@@ -39,7 +39,6 @@ also: ghc, Purescript, Elm, Agda and idris
 
 - Facebook
 - Banks (financial trading, etc)
-- Blockchain
 - Cardano blockchain
 - etc
 
@@ -62,17 +61,27 @@ Package .cabal files have detailed metadata including dependencies allowing most
 
 Stable consistent buildable Haskell package sets
 
+Currently about 2600 packages
+
+- [example](https://www.stackage.org/package/cabal-rpm)
+
 stack build tool
 
 # Fedora Haskell
 
+## Fedora Haskell SIG
+
+Started in 2007
+
+<https://fedoraproject.org/wiki/Haskell_SIG>
+
 ## Fedora Haskell challenges
 
-~450 Haskell sources packages in Fedora currently
+currently ~450 Haskell sources packages in Fedora
 
 GHC has strict version binary dependencies:
 
-- Updating ghc or libraries requires a lot of rebuilding
+- updating ghc or libraries requires a lot of rebuilding
 
 - <http://fedoraproject.org/wiki/Changes/GHC_8.2>
 
@@ -111,15 +120,13 @@ OpenSuse has also used cabal-rpm
 
 ## fedora-haskell-tools
 
-- fhpkg
-- fhbuild
-- fhbz
-
-Currently Fedora does not provide any easy way to query for all Haskell packages
+- fhpkg: clones, diff's, pulls, commits packages
+- fhbuild: builds locally, in mock, "chain" builds in Koji
+- fhbz: refreshes or closes Update bugs with deps or builds
 
 ## Demo of fedora-haskell-tools
 
-# Todo
+# Future plans
 
 ## Improvements to tools
 
@@ -128,7 +135,7 @@ Currently Fedora does not provide any easy way to query for all Haskell packages
 - docker for local building
 - performance: caching of built package info
 - editors for .cabal and .spec files
-- push Haskell types
+- push the Haskell types
 
 - querying for Fedora (Haskell) packages\
   (in the post-pkgdb world)
@@ -148,7 +155,7 @@ Koschei
 
 Fedora CI
 
-# Fedora Haskell Contributions
+## Fedora Haskell Contributions
 
 # Questions?
 
