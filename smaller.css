@@ -4,3 +4,6 @@
 .reveal h2 {
   font-size: 1.95em; }
 
+.reveal section img {
+  border: 0;
+  box-shadow: none; }
